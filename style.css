@@ -56,6 +56,7 @@ body{
     padding-left: 2em; /* adjust as needed */
     padding-bottom: 1rem;
 }
+
 .card__list li::before {
     content: '';
     display: inline-block;
@@ -67,4 +68,65 @@ body{
     position: absolute;
     left: 0;
     top: 0.2em; /* adjust vertical alignment */
+}
+
+.card__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__form--label {
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding-bottom: 0.3rem;
+}
+.card__form--input {
+    border: 1px solid var(--Grey);
+    border-radius: 0.3rem;
+    padding: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--Blue-800);
+    margin-bottom: 1rem;
+}
+.card__form--input:focus {
+    outline: none;
+    border-color: var(--Red);
+}
+
+.card__form--btn{
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--White);
+    background-color: var(--Blue-800);
+}
+
+/* SUBMISSION PROMPT */
+
+.success__message{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.success__img{
+    height: 3rem;
+}
+
+.success__title{
+    padding: 1rem 0;
+}
+
+.success__btn{
+    border: none;
+    border-radius: 0.3rem;
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--White);
+    background-color: var(--Blue-800);
 }
