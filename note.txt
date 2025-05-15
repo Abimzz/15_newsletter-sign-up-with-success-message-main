@@ -1,0 +1,2 @@
+-issue with postioning the li::marker
+-issue with the success msg layout on mobile
