@@ -39,6 +39,7 @@ body{
 
 .container{
     background-color: var(--White);
+    display: none;
 }
 @media (min-width: 768px) {
     .container{
@@ -73,7 +74,7 @@ body{
 }
 
 .card__info{
-    /* padding: 2rem 2rem; */
+    padding: 2rem 2rem;
 }
 @media (min-width: 768px) {
     .card__info{
@@ -151,13 +152,16 @@ body{
 /* SUBMISSION PROMPT */
 
 .success__message{
-    background-color: var(--White);
+    /* display: none; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 2rem;
-    border-radius: 1rem;
-    max-width: 423px;
-    margin: 0 auto;
+    height: 100vh;
+}
+
+.success__img {
+    margin-top: auto;
 }
 
 .success__title{
@@ -166,8 +170,8 @@ body{
     padding: 1rem 0;
 }
 
-.success__subtitle{
-    padding-bottom: 1rem;
+.success__btn--container {
+    margin-top: auto;
 }
 
 .success__btn{
@@ -176,11 +180,75 @@ body{
     width: 100%;
     margin-top: 1rem;
     padding: 0.9rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--White);
     background-color: var(--Blue-800);
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+    transform 0.2s ease;
 }
+
+.success__btn:hover {
+    background-color: var(--Red);
+    transform: scale(1.05);
+}
+
+.success__btn:active {
+    background-color: var(--Red);
+    transform: scale(0.97);
+}
+
+
+
+@media (min-width: 768px) {
+    .success__message{
+        /* display: none; */
+        background-color: var(--White);
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 1rem;
+        height: auto;
+        max-width: 423px;
+        margin: 0 auto;
+    }
+
+    .success__img {
+        margin-top: 0;
+    }
+
+    .success__title{
+        font-weight: 700;
+        font-size: 2.5rem;
+        padding: 1rem 0;
+    }
+
+    .success__subtitle{
+        padding-bottom: 1rem;
+    }
+
+    .success__btn--container {
+    margin-top: 0;
+}
+
+    .success__btn{
+        border: none;
+        border-radius: 0.3rem;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0.9rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--White);
+        background-color: var(--Blue-800);
+    }
+
+    .success__btn:hover {
+        font-size: 1rem;
+    }
+}
+
 
 
 
