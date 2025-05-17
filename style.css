@@ -123,12 +123,19 @@ body{
     display: flex;
     flex-direction: column;
 }
-
-.card__form--label {
+.card__form--label{
+    display: flex;
+    justify-content: space-between;
     font-weight: 700;
     font-size: 0.75rem;
     padding-bottom: 0.3rem;
 }
+
+.erro__msg{
+    color: var(--Red);
+    display: none;
+}
+
 .card__form--input {
     border: 1px solid var(--Grey);
     border-radius: 0.3rem;

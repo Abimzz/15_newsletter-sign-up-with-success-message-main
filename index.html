@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <main class="container" id="signupForm">
+    <main class="container" id="formCard">
       <img class="desktop__img" src="./assets/images/illustration-sign-up-desktop.svg" alt="Illustration sign up desktop">
       <img class="mobile__img" src="./assets/images/illustration-sign-up-mobile.svg" alt="Illustration sign up mobile">
       <div class="card__info">
@@ -23,22 +23,26 @@
         </ul>
 
         <div>
-          <form class="card__form" action="#">
-            <label class="card__form--label" for="email">Email address</label>
-            <input class="card__form--input" type="email" placeholder="email@company.com" required>
-            <button class="card__form--btn" id="submitButton" type="submit">Subscribe to monthly newsletter</button>
+          <form class="card__form" id="subscribeForm" action="#" novalidate>
+            <div class="card__form--label">
+              <label for="email">Email address</label>
+              <p class="erro__msg" id="erroMsg">Vaild email required</p>
+            </div>
+            <input class="card__form--input" id="email" type="email" placeholder="email@company.com" required>
+            <button class="card__form--btn" id="submitBtn" type="submit">Subscribe to monthly newsletter</button>
           </form>
         </div>
       </div>
     </main>  
-    <div class="success__message" id="successMessage">
+    <!-- Success Message -->
+    <div class="success__message" id="successCard">
       <div class="success__img">
         <img src="./assets/images/icon-success.svg" alt="Success icon">
       </div>
       <h1 class="success__title">Thanks for subscribing!</h1>
-      <p class="success__subtitle">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
+      <p class="success__subtitle">A confirmation email has been sent to <strong id="UserEmail"></strong>. Please open it and click the button inside to confirm your subscription.</p>
       <div class="success__btn--container">
-        <button class="success__btn" id="dismissButton">Dismiss message</button>
+        <button class="success__btn" id="dismissBtn">Dismiss message</button>
       </div>
     </div>
     
