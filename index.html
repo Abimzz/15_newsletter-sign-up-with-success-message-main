@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <main class="container" id="formCard">
+    <div class="container" id="formCard">
       <img class="desktop__img" src="./assets/images/illustration-sign-up-desktop.svg" alt="Illustration sign up desktop">
       <img class="mobile__img" src="./assets/images/illustration-sign-up-mobile.svg" alt="Illustration sign up mobile">
       <div class="card__info">
@@ -26,14 +26,14 @@
           <form class="card__form" id="subscribeForm" action="#" novalidate>
             <div class="card__form--label">
               <label for="email">Email address</label>
-              <p class="erro__msg" id="erroMsg">Vaild email required</p>
+              <p class="erro__msg" id="errorMsg">Vaild email required</p>
             </div>
-            <input class="card__form--input" id="email" type="email" placeholder="email@company.com" required>
-            <button class="card__form--btn" id="submitBtn" type="submit">Subscribe to monthly newsletter</button>
+            <input class="card__form--email" id="email" type="email" placeholder="email@company.com" required>
+            <button class="card__form--btn" id="submitBtn" type="submit" onclick="submitBtn">Subscribe to monthly newsletter</button>
           </form>
         </div>
       </div>
-    </main>  
+    </div>  
     <!-- Success Message -->
     <div class="success__message" id="successCard">
       <div class="success__img">

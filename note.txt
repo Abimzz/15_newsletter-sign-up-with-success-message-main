@@ -1,2 +1,3 @@
 -issue with postioning the li::marker
 -issue with the success msg layout on mobile
+-issue with the js for the email vaildation

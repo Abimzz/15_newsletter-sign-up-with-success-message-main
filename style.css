@@ -44,6 +44,9 @@ body{
 .container.dismiss{
     display: none;
 }
+/* .dismiss{
+    display: none;
+} */
 
 @media (min-width: 768px) {
     .container{
@@ -136,7 +139,7 @@ body{
     display: none;
 }
 
-.card__form--input {
+.card__form--email {
     border: 1px solid var(--Grey);
     border-radius: 0.3rem;
     padding: 0.75rem;
@@ -145,13 +148,14 @@ body{
     color: var(--Blue-800);
     margin-bottom: 1rem;
 }
-.card__form--input:focus {
+.card__form--email:focus {
     outline: none;
     border-color: var(--Red);
 }
 
 .card__form--btn{
     border: none;
+    cursor: pointer;
     border-radius: 0.3rem;
     padding: 0.9rem;
     font-size: 0.8rem;
@@ -171,7 +175,10 @@ body{
     height: 100vh;
 }
 
-.success__message.active{
+/* .success__message.active{
+    display: flex;
+} */
+.active{
     display: flex;
 }
 
