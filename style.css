@@ -39,11 +39,10 @@ body{
 
 .container{
     background-color: var(--White);
-    /* display: none; */
 }
-.container.dismiss{
+/* .container.dismiss{
     display: none;
-}
+} */
 /* .dismiss{
     display: none;
 } */
@@ -105,7 +104,7 @@ body{
 }
 .card__list li {
     position: relative;
-    padding-left: 2em; /* adjust as needed */
+    padding-left: 2em;
     padding-bottom: 1rem;
 }
 
@@ -119,7 +118,7 @@ body{
     background-repeat: no-repeat;
     position: absolute;
     left: 0;
-    top: 0.2em; /* adjust vertical alignment */
+    top: 0.2em;
 }
 
 .card__form {
@@ -178,9 +177,7 @@ body{
 /* .success__message.active{
     display: flex;
 } */
-.active{
-    display: flex;
-}
+
 
 .success__img {
     margin-top: auto;
@@ -272,66 +269,14 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .success__message{
+.active{
     display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    height: 100vh;
-    min-height: 100vh;
 }
 
-.success__img{
-    height: 3rem;
+.dismiss{
+    display: none;
 }
 
-.success__title{
-    padding: 1rem 0;
-} */
 
-/* .success__btn--container{
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    width: 100%;
-} */
 
-/* .success__btn--container{
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    padding: env(safe-area-inset-bottom, 16px) 0 16px 0;
-    background: #fff;
-    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
-    display: flex;
-    justify-content: center;
-    z-index: 10;
-} */
-/* .success__btn{
-    border: none;
-    border-radius: 0.3rem;
-    width: 100%;
-    padding: 0.9rem;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--White);
-    background-color: var(--Blue-800);
-} */
 
